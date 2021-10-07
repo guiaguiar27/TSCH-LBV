@@ -4,7 +4,7 @@ VWider bandwidth channel allocation protocol in TSCH networks.
 To run the algorithm it is necessary to follow this steps:
 
 1) Install the contiki-ng environment, via docker, on your machine: https://github.com/contiki-ng/contiki-ng/wiki/Docker
-2) Get the whole system up and running, replace all the files in the Contiki-NG (Original) by the all the files available in this repository.
+2) After getting the whole system working and running, replace all the files in the Contiki-NG (Original) by the all the files available in this repository.
 3) After replacing the only available example, will be the TSCH-LBV.
 4) So far the TSCH-LBV supports only 18 nodes and only supports the COOJA mote
 5) For each execution it is necessary to clean the files os/arvore.txt (topology file) and os/TCH.txt (slotframe file)
