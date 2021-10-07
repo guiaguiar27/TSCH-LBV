@@ -1,16 +1,17 @@
 # TSCH-LBV
-Protocolo de alocação de canais de largura de banda variável em redes TSCH. 
+Wider bandwidth channel allocation protocol in TSCH networks.
 
-Para executar o algoritmo é necessário seguir os seguintes passos: 
-1) Instalar o ambiente do contiki-ng, via docker, em sua máquina: https://github.com/contiki-ng/contiki-ng/wiki/Docker 
-2) Após obter todo o sistema em funcionamento, substitua o repositório Contiki-NG(Original) pelo Contiki-NG disponibilizada neste repositório. 
-3) Após a substituição o único exemplo disponível será o do TSCH-LBV.   
-4) Até o momento o TSCH-LBV suporta apenas 18 nós e possui suporte apenas para o COOJA mote  
-5) Para cada execução é necessário limpar os arquivos os/arvore.txt e os/TCH.txt
-6) Para aferir as métricas de entrega de pacotes e vasão é necessário copiar os logs do COOJA e passá-los em uma análisador em python dentro da pasta Analisador 
-7) Os resultados poderão ser conferidos após isso.  
+To run the algorithm it is necessary to follow this steps:
+1) Install the contiki-ng environment, via docker, on your machine: https://github.com/contiki-ng/contiki-ng/wiki/Docker
+2) Get the whole system up and running, replace all the files in the Contiki-NG (Original) by the all the files available in this repository.
+3) After replacing the only available example, will be the TSCH-LBV.
+4) So far the TSCH-LBV supports only 18 nodes and only supports the COOJA mote
+5) For each execution it is necessary to clean the files os/arvore.txt (topology file) and os/TCH.txt (slotframe file)
+6) In order to measure the metrics of packet delivery and throughput it is necessary to copy the COOJA logs and pass them to a python analyzer inside the Analyzer folder
+7) Before copying, make sure that the times are in ms (click on the time parameter in COOJA)
+8) The results obtained will be checked after that.
 
-Na arquitetura do Contiki-NG, as principais implementação são as seguintes: 
+In the Contiki-NG architecture, the main implementations are as follows:
 os/net/tsch/ 
   > tsch_schedule.c   
   > 
@@ -37,4 +38,5 @@ examples/6tisch/tschLBV
   > 
   > project-conf.h
   > 
-  > Makefile
+  > Makefile 
+This repository is an extension of the original Contiki-NG implementation: https://github.com/contiki-ng/contiki-ng
