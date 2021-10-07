@@ -12,18 +12,29 @@ Para executar o algoritmo é necessário seguir os seguintes passos:
 
 Na arquitetura do Contiki-NG, as principais implementação são as seguintes: 
 os/net/tsch/ 
-  > tsch_schedule.c  
+  > tsch_schedule.c   
+  > 
   > tsch_schedule.h 
+  > 
   > network-graph.h 
+  >  
   > conf.c
+  > 
   > conf.h
-  > tsch-log.c 
-  > tsch-log.h 
+  > 
+  > tsch-log.c
+  >  
+  > tsch-log.h
+  >  
   > tsch.c
-  > tsch.h 
+  > 
+  > tsch.h
+  >  
   > tsch-conf.h 
 
 examples/6tisch/tschLBV 
   > node.c
+  > 
   > project-conf.h
+  > 
   > Makefile
