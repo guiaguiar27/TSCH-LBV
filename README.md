@@ -1,5 +1,5 @@
 # TSCH-LB
-VWider bandwidth channel allocation protocol in TSCH networks.
+Wider bandwidth channel allocation protocol in TSCH networks.
 
 To run the algorithm it is necessary to follow this steps:
 
